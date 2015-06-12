@@ -182,11 +182,52 @@ bower install --save angular
 						<h4>Model View Controller</h4>
 						<p>Split responsibilities</p>
 						<ul>
-							<li>HTML/CSS describe view</li>
-							<li>Controller to drive actions</li>
-							<li>Data access services to get a server side model</li>
+							<li>View : HTML/CSS</li>
+							<li>Controller :Drive actions</li>
+							<li>Model : Data access/Local storage</li>
 						</ul>
 					</section>
+					<section>
+						<h3>Directive</h3>
+						<p>super charged HTML5</p>
+						<p>Follow HTML5 best practices</p>
+						<p>Reusable components</p>
+						<p>Help to be more descriptive</p>
+					</section>
+					<section>
+						<h3>Directive</h3>
+                        <pre>
+*.html
+                            <code>
+<my-directive value="Hello World"></my-directive>
+                            </code>
+                        </pre>
+						<div>
+							<pre>
+*.js
+								<code>
+app.directive('my-directive',function(){
+   return {
+        restrict : 'E',
+        templateUrl : '<h1>My Beautiful component says : {{value}}</h1>',
+        scope : {
+            value : '='
+        }
+   }
+});
+								</code>
+							</pre>
+						</div>
+					</section>
+                    <section>
+                        <h3>Directive</h3>
+                        <p>Result</p>
+                        <pre>
+                            <code>
+<h1>My Beautiful component says : Hello World</h1>
+                            </code>
+                        </pre>
+                    </section>
 					<section>
 						<p>Allow to do some small operation on client side</p>
 						<p>&</p>
@@ -200,13 +241,9 @@ bower install --save angular
                             <li>Don't forgot a cache manifest</li>
                         </ul>
                     </section>
-                    <section>
-                        <h3>Reusable component</h3>
-                        <p>Directives may help</p>
-                        <p>According to html5 best practices</p>
-                        <p>Help to be more descriptive</p>
-                    </section>
+
 				</section>
+
 				<section>
 					<section>
 						<h1>Future</h1>
