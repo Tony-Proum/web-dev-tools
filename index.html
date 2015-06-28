@@ -45,8 +45,34 @@
 				</section>
                 <section>
                     <section>
-                        <h2>Quick history</h2>
+                        <h2>Quick Review</h2>
                     </section>
+					<section>
+						<pre>
+							<code class="javascript">
+if(condition){
+	dialog('A null & condition check');
+}
+							</code>
+						</pre>
+					</section>
+					<section>
+						<pre>
+							<code class="javascript">
+// Declare at the beginning
+var firstName, lastName, price, discount, fullPrice;
+
+// Use later
+firstName = "John";
+lastName = "Doe";
+
+price = 19.90;
+discount = 0.10;
+
+fullPrice = price * 100 / discount;
+							</code>
+						</pre>
+					</section>
                     <section>
                         <figure>
                             <img src="images/iceberg.png">
@@ -56,6 +82,21 @@
                             </figcaption>
                         </figure>
                     </section>
+					<section>
+						<pre>
+							<code class="javascript">
+$('.dialog-id #ok').click(function(){
+	if(condition){
+		postData();
+	}
+	if(condition2){
+		getData();
+	}
+	// ...
+});
+							</code>
+						</pre>
+					</section>
                     <section>
                         <figure>
                             <img src="images/plumbing.png">
@@ -84,18 +125,16 @@
 				</section>
 
 				<section>
-
+                    <img src="images/nodejs.png"/>
 					<section>
-						<img src="images/nodejs.png"/>
 						<p>Chrome's JavaScript runtime</p>
 						<p>A JVM for javascript devs</p>
 						<p>Run tools writes in javascript</p>
 					</section>
-
 					<section>
 						<p>example from nodejs.org</p>
 						 <pre>
-							 <code>
+							 <code class="javascript">
 var http = require('http');
 
 http.createServer(function (req, res) {
@@ -107,7 +146,6 @@ console.log('Server running at http://127.0.0.1:1337/');
 							</code>
 					 	</pre>
 					</section>
-
 					<section>
 						<p>result</p>
 						<pre>
@@ -117,18 +155,19 @@ Server running at http://127.0.0.1:1337/
 							</code>
 						</pre>
 					</section>
-
 					<section>
-						<p>result http://127.0.0.1:1337</p>
-						<code>
-							Hello World
-						</code>
+						<figure>
+							<img src="images/nodeHello.png">
+							<figcaption>
+								<small>results</small>
+							</figcaption>
+						</figure>
 					</section>
 
 				</section>
 				<section>
+                    <img src="images/npm.png"/>
 					<section>
-						<img src="images/npm.png"/>
 						<p>Package manager for NodeJS</p>
 					</section>
 
@@ -136,69 +175,121 @@ Server running at http://127.0.0.1:1337/
 						<p>Allow to install tools using command line</p>
 						<p>examples :</p>
 						<pre>
-							<code>
+							<code class="c">
 npm install -g grunt-cli bower
 							</code>
 						</pre>
 					</section>
 				</section>
 				<section>
+                    <img src="images/grunt.png"/>
 					<section>
-						<img src="images/grunt.png"/>
 						<h3>Grunt</h3>
                         <p>Javascript task runner</p>
                         <p>Ant or Maven for web devs</p>
                         <p>Allows to build your app for prod purpose</p>
 					</section>
-
                     <section>
-                        <h3>Common tasks</h3>
-                        <ul>
-                            <li>serve</li>
-                            <li>build</li>
-                            <li>minify</li>
-                            <li>cdnify</li>
-                        </ul>
+                        <h3>Run Common tasks</h3>
                     </section>
+					<section>
+						<h3>Serve</h3>
+						<p>Live Reload rocks !</p>
+					</section>
+					<section>
+						<h3>Build</h3>
+                        <div style="float: right;"><img src="images/compress.png"></div>
+                        <div>
+                            <p>minify</p>
+                            <p>cdnify</p>
+                        </div>
+                    </section>
+					<section>
+                        <img src="images/sass.png">
+						<p>CSS with superpowers</p>
+					</section>
 				</section>
 				<section>
+                    <img src="images/bower.png"/>
 					<section>
-						<img src="images/bower.png"/>
 						<h3>Bower</h3>
 						<p>Javascript dependency manager</p>
 					</section>
-					<section>
-						<p>Example bower.json</p>
-						<pre>
-						<code>
+                    <section>
+                        <pre>
+                            <code class="c">
+bower init
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <pre>
+                            <code class="javascript">
 {
-	"name": "myProject",
-	"version": "1.0.0-SNAPSHOT",
-	"dependencies": {
-		"angular": "~1.3.0"
-	},
-	"appPath": "app"
+  name: 'Test',
+  version: '0.0.0',
+  authors: [
+    'Tony Proum'
+  ],
+  description: 'a test project',
+  main: 'js/test.js',
+  license: 'MIT',
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
 }
-						</code>
-						</pre>
-					</section>
+? Looks good?
+                            </code>
+                        </pre>
+                    </section>
 					<section>
 						<h3>How to use</h3>
 						<pre>
-						<code>
+							<code class="c">
 bower install --save angular
-						</code>
+							</code>
 						</pre>
 					</section>
-					<section>
-						<h3>Result</h3>
-					</section>
-				</section>
+                    <section>
+                        <pre>
+                            <code class="javascript">
+{
+  "name": "Test",
+  "version": "0.0.0",
+  "authors": [
+    "Tony Proum"
+  ],
+  "description": "a test project",
+  "main": "js/test.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.1"
+  }
+}
+                            </code>
+                        </pre>
+                    </section>
+                </section>
 				<section>
+                    <img src="images/angularjs.png"/>
 					<section>
-						<img src="images/angularjs.png"/>
 						<p>Single page web application</p>
 					</section>
+                    <section>
+                        <p>Past</p>
+                        <img src="images/clientToServer.png">
+                    </section>
 					<section>
 						<h3>Client side</h3>
 						<ul>
@@ -206,6 +297,7 @@ bower install --save angular
 							<li>Reusable Components</li>
 							<li>Two way data binding</li>
 						</ul>
+                        <img src="images/clientToServerWithAngular.png">
 					</section>
 					<section>
 						<h3>Split responsibilities</h3>
@@ -225,21 +317,15 @@ bower install --save angular
                         </ul>
 					</section>
 					<section>
-						<h3>Directive</h3>
-                        <pre>
-*.html
-                            <code>
-<my-directive value="Hello World"></my-directive>
-                            </code>
-                        </pre>
 						<div>
 							<pre>
 *.js
-								<code>
+								<code class="javascript">
 app.directive('my-directive',function(){
    return {
         restrict : 'E',
         templateUrl : '<h1>My Beautiful component says : {{value}}</h1>',
+        controller : 'MyAppController',
         scope : {
             value : '='
         }
@@ -250,7 +336,14 @@ app.directive('my-directive',function(){
 						</div>
 					</section>
                     <section>
-                        <h3>Directive</h3>
+<pre>
+*.html
+                            <code>
+<my-directive value="Hello World"></my-directive>
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
                         <p>Result</p>
                         <pre>
                             <code>
@@ -259,21 +352,25 @@ app.directive('my-directive',function(){
                         </pre>
                     </section>
 					<section>
-						<p>Allow to do some small operation on client side</p>
-						<p>&</p>
-						<p>Offline work</p>
+						<h3>Controller</h3>
+                        <pre>
+                            <code>
+app.controller('MyAppController',function(){
+  $scope.$watch('value',function(){
+    //do something
+  })
+});
+                            </code>
+                        </pre>
 					</section>
                     <section>
                         <h3>Notes for offline</h3>
                         <ul>
                             <li>Use embedded templates to work offline (JAVASCRIPT)</li>
                             <li>Warning : refresh will delete your data without a local storage</li>
-                            <li>Don't forgot a cache manifest</li>
                         </ul>
                     </section>
-
 				</section>
-
 				<section>
 					<section>
 						<h1>Future</h1>

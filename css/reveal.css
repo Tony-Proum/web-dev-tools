@@ -1140,7 +1140,10 @@ body {
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
 
-section > img {
+section img {
   border: none !important;
   background: none !important;
   box-shadow: none !important; }
+
+.reveal section pre code {
+  max-height: none; }
