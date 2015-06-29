@@ -384,6 +384,54 @@ app.controller('MyAppController',function(){
 						</ul>
 					</section>
 				</section>
+				<section>
+					<h3>TypeScript</h3>
+					<pre>
+						<code class="javascript">
+class Point {
+  x: number;
+  y: number;
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+  }
+  getDist() {
+    return Math.sqrt(this.x * this.x +
+    this.y * this.y);
+  }
+}
+var p = new Point(3,4);
+var dist = p.getDst();
+alert("Hypotenuse is: " + dist);
+						</code>
+					</pre>
+				</section>
+				<section>
+						<section>
+						<h3>Angular2</h3>
+						<pre>
+							<code class="javascript">
+@Component({
+  selector: 'my-app'
+})
+@View({
+  template: '<h1>Hello {{ name }}</h1>'
+})
+// Component controller
+class MyAppComponent {
+  name: string;
+
+  constructor() {
+	this.name = 'Alice';
+  }
+}
+							</code>
+						</pre>
+					</section>
+					<section>
+						<img src="images/benchmark.png">
+					</section>
+				</section>
 			</div>
 
 		</div>
